@@ -10,13 +10,22 @@ body
 
 .navbar-brand
 {
-    height: 9vh;
-    width: 9vh;
+    display: block;
+    max-height: 9vh;
+    max-width: 9vh;
+    width: 8vh;
+    height: auto;
+}
+
+.screenArea 
+{
+    position: relative;
+    height: 90vh;
 }
 
 .carousel 
 {
-    padding-top: 10vh;
+    margin-top: 10vh;
     padding-bottom: 0;
 }
 
@@ -38,6 +47,8 @@ body
     min-width: 100%;
     height: 100%;
 }
+
+
 
 .bd-placeholder-img 
 {
