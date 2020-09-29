@@ -1,6 +1,7 @@
 body 
 {
     color: #5a5a5a;
+    overflow-x: hidden;
 }
 
 /*.navbar 
@@ -48,7 +49,17 @@ body
     height: 100%;
 }
 
+.col 
+{
+    flex-grow: 1;
+    transition: all 400ms ease;
+}
 
+.col-1 
+{
+    flex-shrink: 1;
+    transition: all 400ms ease;
+}
 
 .bd-placeholder-img 
 {

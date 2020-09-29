@@ -101,39 +101,26 @@
  
         <!--Games-->
         <div id="gamesShowdown" class="container-fluid screenArea" style="margin:10px 0 0 0; padding: 0;">
-          <div class="row screenArea" style="margin: 0;padding: 0;">
-            <div id="gamesShowdown1"  class="col-1" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown1')">
-              <img src="mageMania1Sideways.jpg" style="width: 100%; height: 90vh;" alt="">
+          <div class="row screenArea d-none d-lg-flex" style="margin: 0;padding: 0;">
+            <div id="gamesShowdown1"  class="col" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown1')">
+              <img src="mageMania1Sideways.jpg" style="width: 90vw; height: 90vh; position: absolute;" alt="">
             </div>
             <div id="gamesShowdown2" class="col-1" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown2')">
-              <img src="mageMania2Sideways.jpg" style="width: 100%; height: 90vh;" alt="">
+              <img src="mageMania2Sideways.jpg" style="width: 90vw; height: 90vh; position: absolute;" alt="">
             </div>
-            <div id="gamesShowdown3" class="col" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown3')">
-              <img src="mageMania3Sideways.jpg" style="width: 100%; height: 90vh;" alt="">
+            <div id="gamesShowdown3" class="col-1" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown3')">
+              <img src="mageMania3Sideways.jpg" style="width: 90vw; height: 90vh; position: absolute;" alt="">
             </div>
+          </div>
+
+          <script src="./gamesShowdown.js"></script>
+
+          <div class="row screenArea d-flex d-lg-none" style="margin: 0;padding: 0;">
+            <img src="mageMania4Sideways.jpg" style="width: 100vh;">
           </div>
         </div>
 
-        <script>
-          function Expand(id)
-          {
-            var mainElement = document.getElementById("gamesShowdown").children[0];
-          
-            for (i = 0; i < mainElement.children.length; i++)
-            {
-              if (mainElement.children[i].id === id)
-              {
-                mainElement.children[i].classList.remove("col-1");
-                mainElement.children[i].classList.add("col");
-              }
-              else
-              {
-                mainElement.children[i].classList.remove("col");
-                mainElement.children[i].classList.add("col-1");
-              }
-            }
-          }
-        </script>
+        
 
       </main>  
 
