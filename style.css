@@ -49,16 +49,36 @@ body
     height: 100%;
 }
 
-.col 
+.grow
 {
     flex-grow: 1;
     transition: all 400ms ease;
 }
 
-.col-1 
+.shrink
 {
     flex-shrink: 1;
     transition: all 400ms ease;
+}
+
+.gameShowBorder 
+{
+    border-style: outset;
+    border-width: 5px;
+    border-color: aliceblue;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.gameShowImage 
+{
+    width: 90vw; 
+    height: 90vh; 
+    position: absolute; 
+    z-index: -1;
+    top: -5px;
+    left: -5px;
 }
 
 .bd-placeholder-img 
