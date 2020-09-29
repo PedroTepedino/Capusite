@@ -3,9 +3,15 @@ body
     color: #5a5a5a;
 }
 
-.navbar 
+/*.navbar 
 {
     height: 10vh;
+}*/
+
+.navbar-brand
+{
+    height: 9vh;
+    width: 9vh;
 }
 
 .carousel 
