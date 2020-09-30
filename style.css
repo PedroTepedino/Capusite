@@ -64,12 +64,12 @@ body
 
 .gameShowBorder 
 {
-    border-style: outset;
-    border-width: 5px;
-    border-color: aliceblue;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    border-style: outset;
+    border-width: 5px;
+    border-color: aliceblue;
 }
 
 .gameShowImageHorizontal 
@@ -84,18 +84,30 @@ body
 
 .gameShowImageVerticalExpanded
 {
-    width: 100vw; 
-    height: 80vh; 
-    object-fit: cover;
+    width: 100vw;
+    height: 70vh;
     transition: all 400ms ease;
+}
+
+.gameShowImageVerticalExpanded img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .gameShowImageVerticalCollapsed
 {
-    width: 100vw; 
-    height: 5vh; 
-    object-fit: cover;
+    width: 100vw;
+    height: 10vh;
     transition: all 400ms ease;
+}
+
+.gameShowImageVerticalCollapsed img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .bd-placeholder-img 

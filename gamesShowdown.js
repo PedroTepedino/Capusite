@@ -29,13 +29,13 @@ function ExpandVertical(id)
     {
         if (mainElement.children[i].id === id)
         {
-            mainElement.children[i].children[0].classList.remove("gameShowImageVerticalCollapsed");
-            mainElement.children[i].children[0].classList.add("gameShowImageVerticalExpanded");
+            mainElement.children[i].classList.remove("gameShowImageVerticalCollapsed");
+            mainElement.children[i].classList.add("gameShowImageVerticalExpanded");
         }    
         else
         {
-            mainElement.children[i].children[0].classList.remove("gameShowImageVerticalExpanded");
-            mainElement.children[i].children[0].classList.add("gameShowImageVerticalCollapsed");
+            mainElement.children[i].classList.remove("gameShowImageVerticalExpanded");
+            mainElement.children[i].classList.add("gameShowImageVerticalCollapsed");
         }
     }
 }
