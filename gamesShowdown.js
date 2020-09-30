@@ -1,6 +1,6 @@
 function Expand(id)
 {
-    var mainElement = document.getElementById("gamesShowdown").children[0];
+    var mainElement = document.getElementById("gamesShowdownHorizontal");
 
     for (i = 0; i < mainElement.children.length; i++)
     {
@@ -19,4 +19,23 @@ function Expand(id)
             mainElement.children[i].classList.add("shrink");
         }
     }   
+}
+
+function ExpandVertical(id)
+{
+    var mainElement = document.getElementById("gamesShowdownVertical");
+
+    for (i = 0; i < mainElement.children.length; i++)
+    {
+        if (mainElement.children[i].id === id)
+        {
+            mainElement.children[i].children[0].classList.remove("gameShowImageVerticalCollapsed");
+            mainElement.children[i].children[0].classList.add("gameShowImageVerticalExpanded");
+        }    
+        else
+        {
+            mainElement.children[i].children[0].classList.remove("gameShowImageVerticalExpanded");
+            mainElement.children[i].children[0].classList.add("gameShowImageVerticalCollapsed");
+        }
+    }
 }

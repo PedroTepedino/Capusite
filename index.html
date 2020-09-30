@@ -32,6 +32,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="#">Games</a>
                     </li>
+
                     <li class="nav-item">
                       <a class="nav-link" href="#">News</a>
                     </li>
@@ -101,27 +102,32 @@
  
         <!--Games-->
         <div id="gamesShowdown" class="container-fluid screenArea" style="margin: 10px 0 0 0; padding: 0;">
-          <div class="row screenArea d-none d-lg-flex" style="margin: 0;padding: 0;">
-            <div id="gamesShowdown1"  class="col grow gameShowBorder" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown1')">
-              <img src="mageMania1.jpg" class="gameShowImage" alt="">
+          <div id="gamesShowdownHorizontal" class="row screenArea d-none d-lg-flex zeroMarginPadding">
+            <div id="gamesShowdown1"  class="col grow gameShowBorder zeroMarginPadding" onclick="Expand('gamesShowdown1')">
+              <img src="mageMania1.jpg" class="gameShowImageHorizontal" alt="">
             </div>
-            <div id="gamesShowdown2" class="col-1 shrink gameShowBorder" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown2')">
-              <img src="mageMania2.jpg" class="gameShowImage" alt="">
+            <div id="gamesShowdown2" class="col-1 shrink gameShowBorder zeroMarginPadding" onclick="Expand('gamesShowdown2')">
+              <img src="mageMania2.jpg" class="gameShowImageHorizontal" alt="">
             </div>
-            <div id="gamesShowdown3" class="col-1 shrink gameShowBorder" style="margin: 0;padding: 0;" onclick="Expand('gamesShowdown3')">
-              <img src="mageMania3.jpg" class="gameShowImage" alt="">
+            <div id="gamesShowdown3" class="col-1 shrink gameShowBorder zeroMarginPadding" onclick="Expand('gamesShowdown3')">
+              <img src="mageMania3.jpg" class="gameShowImageHorizontal" alt="">
+            </div>
+          </div>
+
+          <div id="gamesShowdownVertical" class="row d-flex d-lg-none zeroMarginPadding">
+            <div id="gamesVertical1" class="col-12 zeroMarginPadding" style="height: auto" onclick="ExpandVertical('gamesVertical1')">
+              <img src="mageMania1Sideways.jpg" class="gameShowImageVerticalExpanded">
+            </div>
+            <div id="gamesVertical2" class="col-12 zeroMarginPadding" style="height: auto" onclick="ExpandVertical('gamesVertical2')">
+              <img src="mageMania2Sideways.jpg" class="gameShowImageVerticalCollapsed">
+            </div>
+            <div id="gamesVertical3" class="col-12 zeroMarginPadding" style="height: auto" onclick="ExpandVertical('gamesVertical3')">
+              <img src="mageMania3Sideways.jpg"  class="gameShowImageVerticalCollapsed">
             </div>
           </div>
 
           <script src="./gamesShowdown.js"></script>
-
-          <div class="row screenArea d-flex d-lg-none" style="margin: 0;padding: 0;">
-            <img src="mageMania4Sideways.jpg" style="width: 100vh; height: 90vh;">
-          </div>
         </div>
-
-        
-
       </main>  
 
         <!--Bootstrap-->

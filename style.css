@@ -4,11 +4,6 @@ body
     overflow-x: hidden;
 }
 
-/*.navbar 
-{
-    height: 10vh;
-}*/
-
 .navbar-brand
 {
     display: block;
@@ -61,6 +56,12 @@ body
     transition: all 400ms ease;
 }
 
+.zeroMarginPadding
+{
+    margin: 0;
+    padding: 0;
+}
+
 .gameShowBorder 
 {
     border-style: outset;
@@ -71,7 +72,7 @@ body
     -webkit-box-sizing: border-box;
 }
 
-.gameShowImage 
+.gameShowImageHorizontal 
 {
     width: 90vw; 
     height: 90vh; 
@@ -79,6 +80,22 @@ body
     z-index: -1;
     top: -5px;
     left: -5px;
+}
+
+.gameShowImageVerticalExpanded
+{
+    width: 100vw; 
+    height: 80vh; 
+    object-fit: cover;
+    transition: all 400ms ease;
+}
+
+.gameShowImageVerticalCollapsed
+{
+    width: 100vw; 
+    height: 5vh; 
+    object-fit: cover;
+    transition: all 400ms ease;
 }
 
 .bd-placeholder-img 
@@ -98,3 +115,4 @@ body
         font-size: 3.5rem;
     }
 }
+
