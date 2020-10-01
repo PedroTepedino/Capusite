@@ -1,6 +1,6 @@
-html
+html, body
 {
-    scroll-behavior: smooth;
+    background-color: #343a40;
 }
 
 body 
@@ -18,6 +18,46 @@ body
     height: auto;
 }
 
+.navbarButtonSizes
+{
+    width: 100%;
+}
+
+@media (max-width: 992px)
+{
+    .navbarButtonSizes
+    {
+        width: 20%;
+    }
+
+    .navbarButtonSizes li
+    {
+        padding-left: 10px;
+        text-align: left;
+    }
+}
+
+.nav-item
+{
+    margin: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid #343a40;
+    border-radius: 10px;
+}
+
+.nav-item:hover
+{
+    background-color: #494b54;
+    transition: background-color 400ms;
+}
+
+ul .active
+{
+    border-color: slategray;
+}
+
 .fullScreen
 {
     position: relative;
@@ -30,12 +70,6 @@ body
     position: relative;
     height: 90vh;
 }
-
-/*.carousel*/
-/*{*/
-/*    margin-top: 10vh;*/
-/*    padding-bottom: 0;*/
-/*}*/
 
 .carousel-caption 
 {
@@ -84,15 +118,19 @@ body
     border-color: aliceblue;
 }
 
-.gameShowImageHorizontal 
+.gameShowImageHorizontal
 {
-    width: 90vw; 
-    height: 90vh; 
-    position: absolute; 
-    z-index: -1;
-    top: -5px;
-    left: -5px;
+    height: 90vh;
+    transition: all 400ms ease;
 }
+
+.gameShowImageHorizontal img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .gameShowImageVerticalExpanded
 {

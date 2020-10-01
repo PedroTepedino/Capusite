@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="jquery-3.5.1.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,9 +9,7 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
-    <script ></script>
 
-    <script src="./gamesShowdown.js"></script>
 
     <title>Capudino</title>
 
@@ -34,25 +23,26 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarButtons"
+        <button class="navbar-toggler" tnavbarButtonsype="button" data-toggle="collapse" data-target="#navbarButtons"
                 aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand mx-lg-3 mx-auto " href="#">
-            <img src="./canecoso.png" width="100%" height="100%" alt="">
-        </a>
+        <div class="navbar-brand mx-auto">
+            <a class="nav-link scroll" href="#Home" style=" padding: 0">
+                <img src="./canecoso.png" alt="" style="height: 7vh; width: 7vh">
+            </a>
+        </div>
 
         <div class="collapse navbar-collapse" id="navbarButtons">
-            <ul class="navbar-nav mx-md-4">
-                <li class="nav-item active">
+            <ul class="nav navbar-nav mx-md-4 navbarButtonSizes">
+                <li class="nav-item active ">
                     <a class="nav-link scroll" href="#Home">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link scroll" href="#Games">Games</a>
                 </li>
-
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link scroll" href="#News">News</a>
                 </li>
                 <li class="nav-item">
@@ -61,11 +51,13 @@
                 <li class="nav-item">
                     <a class="nav-link scroll" href="#Comunity">Comunity</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link scroll" href="#Contact">Contact Us</a>
                 </li>
             </ul>
         </div>
+
+
     </nav>
 </header>
 
@@ -127,32 +119,32 @@
     <div id="Games" class="fullScreen">
         <div id="gamesShowdown" class="container-fluid screenArea zeroMarginPadding" >
             <div id="gamesShowdownHorizontal" class="row screenArea d-none d-lg-flex zeroMarginPadding">
-                <div id="gamesShowdown1" class="col grow gameShowBorder zeroMarginPadding"
+                <div id="gamesShowdown1" class="col gameShowBorder zeroMarginPadding gameShowImageHorizontal"
                      onclick="Expand('gamesShowdown1')">
-                    <img src="mageMania1.jpg" class="gameShowImageHorizontal" alt="">
+                    <img src="mageMania1.jpg" alt="">
                 </div>
-                <div id="gamesShowdown2" class="col-1 shrink gameShowBorder zeroMarginPadding"
+                <div id="gamesShowdown2" class="col-1 gameShowBorder zeroMarginPadding gameShowImageHorizontal"
                      onclick="Expand('gamesShowdown2')">
-                    <img src="mageMania2.jpg" class="gameShowImageHorizontal" alt="">
+                    <img src="mageMania2.jpg"  alt="">
                 </div>
-                <div id="gamesShowdown3" class="col-1 shrink gameShowBorder zeroMarginPadding"
+                <div id="gamesShowdown3" class="col-1 gameShowBorder zeroMarginPadding gameShowImageHorizontal"
                      onclick="Expand('gamesShowdown3')">
-                    <img src="mageMania3.jpg" class="gameShowImageHorizontal" alt="">
+                    <img src="mageMania3.jpg"  alt="">
                 </div>
             </div>
 
             <div id="gamesShowdownVertical" class="row d-flex d-lg-none zeroMarginPadding">
                 <div id="gamesVertical1" class="col-12 zeroMarginPadding gameShowImageVerticalExpanded gameShowBorder"
                      onclick="ExpandVertical('gamesVertical1')">
-                    <img src="mageMania1Sideways.jpg" class="">
+                    <img src="mageMania1Sideways.jpg" alt="">
                 </div>
                 <div id="gamesVertical2" class="col-12 zeroMarginPadding gameShowImageVerticalCollapsed gameShowBorder"
                      onclick="ExpandVertical('gamesVertical2')">
-                    <img src="mageMania2Sideways.jpg" class="">
+                    <img src="mageMania2Sideways.jpg" alt="">
                 </div>
                 <div id="gamesVertical3" class="col-12 zeroMarginPadding gameShowImageVerticalCollapsed gameShowBorder"
                      onclick="ExpandVertical('gamesVertical3')">
-                    <img src="mageMania3Sideways.jpg" class="">
+                    <img src="mageMania3Sideways.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -243,5 +235,20 @@
     </div>
 
 </main>
+
+<!--Scripts-->
+<script src="jquery-3.5.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<script src="./smoothScroll.js"></script>
+<script src="./gamesShowdown.js"></script>
+<script src="./collapseNavbarToggle.js"></script>
 </body>
 </html>
