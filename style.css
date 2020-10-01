@@ -1,3 +1,8 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
 body 
 {
     color: #5a5a5a;
@@ -13,17 +18,24 @@ body
     height: auto;
 }
 
+.fullScreen
+{
+    position: relative;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
 .screenArea 
 {
     position: relative;
     height: 90vh;
 }
 
-.carousel 
-{
-    margin-top: 10vh;
-    padding-bottom: 0;
-}
+/*.carousel*/
+/*{*/
+/*    margin-top: 10vh;*/
+/*    padding-bottom: 0;*/
+/*}*/
 
 .carousel-caption 
 {
@@ -120,11 +132,26 @@ body
     user-select: none;
 }
 
+.newsCardContainer
+{
+    max-height: 20%;
+}
+
 @media (min-width: 768px) 
 {
     .bd-placeholder-img-lg 
     {
         font-size: 3.5rem;
     }
+
+    .newsCardContainer
+    {
+        max-height: 100%;
+    }
 }
 
+
+.newsCardContainer .card
+{
+    max-height: 100%;
+}
