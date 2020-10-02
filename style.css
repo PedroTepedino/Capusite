@@ -193,3 +193,26 @@ ul .active
 {
     max-height: 100%;
 }
+
+.card-header 
+{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: flex-start;
+    padding: 2% 5%;
+}
+
+.card-header h3, .card-header h5
+{
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+@media (max-width: 992px)
+{
+    .card-header h3, .card-header h5
+    {
+        font-size: 1.25rem;
+        margin: 5px;
+    }
+}
