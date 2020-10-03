@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Secular+One&family=Varela+Round&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/*font-family: 'Bangers', cursive;*/
+/*font-family: 'Secular One', sans-serif;*/
+/*font-family: 'Varela Round', sans-serif;*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
+
 html, body
 {
     background-color: #343a40;
@@ -7,7 +14,29 @@ body
 {
     color: #5a5a5a;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+.scrollbar::-webkit-scrollbar
+{
+    display: block;
+    width: 0.7em;
+}
+
+.scrollbar::-webkit-scrollbar-track
+{
+    background-color: #494b54;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: rgba(215, 215, 215, 0.5);
+    border-right: none;
+    border-left: none;
+    transition: background-color 1000ms;
+}
+
 
 .navbar-brand
 {
@@ -33,7 +62,9 @@ body
     .navbarButtonSizes li
     {
         padding-left: 10px;
-        text-align: left;
+        padding-right: 10px;
+        text-align: center;
+        background-color: #343a40;
     }
 }
 
@@ -49,13 +80,21 @@ body
 
 .nav-item:hover
 {
-    background-color: #494b54;
+    background-color: #ffffff;
     transition: background-color 400ms;
 }
+
+.nav-item:hover svg
+{
+    fill: #14141d;
+    transition: fill 400ms;
+}
+
 
 ul .active
 {
     border-color: slategray;
+    background-color: #4d5453;
 }
 
 .fullScreen
@@ -202,11 +241,6 @@ ul .active
     padding: 2% 5%;
 }
 
-.card-header h3, .card-header h5
-{
-    font-size: 1.7rem;
-    margin: 10px;
-}
 
 @media (max-width: 992px)
 {
@@ -215,4 +249,46 @@ ul .active
         font-size: 1.25rem;
         margin: 5px;
     }
+}
+
+.title
+{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1rem;
+}
+
+.menu
+{
+    font-family: 'Secular One', sans-serif;
+}
+
+.text
+{
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.nav-link
+{
+    font-family: 'Secular One', sans-serif;
+}
+
+.card-title
+{
+    font-size: 3rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.card-subtitle
+{
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.custom-scrollbar
+{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    overflow-y: auto;
 }
