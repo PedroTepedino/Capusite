@@ -20,6 +20,7 @@
     <script src="./smoothScroll.js"></script>
     <script src="./gamesShowdown.js"></script>
     <script src="./collapseNavbarToggle.js"></script>
+    <script src="./circlePhotosAspectRations.js"></script>
 </head>
 
 <body class="scrollbar scrollbarVisibleThumb">
@@ -36,7 +37,7 @@
 
             <div class="navbar-brand mx-auto">
                 <a class="nav-link scroll" href="#Home" style=" padding: 0">
-                    <img src="./canecoso.png" alt="" style="height: 7vh; width: 7vh">
+                    <img src="./images/CapudinoLogoNoNameNoBackground.png" alt="" style="height: 7vh; width: auto">
                 </a>
             </div>
 
@@ -262,22 +263,41 @@
         <!--About Us-->
         <div id="AboutUS" class="fullScreen">
             <div class="container-fluid screenArea zeroMarginPadding d-flex justify-content-center align-items-center">
-                <div class="row" style="height: 80%; width: 80%; background-color: #F1B761;">
-                    <div class="col-6">
-                        <div class="row h-50 w-100">
+                <div class="row" style="height: 80%; width: 80%; background-color: #F1B761; border-radius: 10px;">
+                    <div id="aboutUsPhoto" class="col-12 col-lg-6 d-flex">
+                        <img src="./images/CapudinoLogo2 (1).png" alt=""> 
+                    </div>
+                    <div class=" col-12 col-lg-6 h-100">
+                        <div class="row h-0 w-100">
                             <div class="col-12">
-
+                                <p>Textoso </p>
                             </div>
                         </div>
-                        <div class="row h-50 w-100">
-                            <div class="col-12">
-
+                        <div class="row h-50 w-100 photos-row">
+                            <div class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/CapudinoLogoNoNameNoBackground.png" alt="" class="rounded-circle  circle-photo" width="100%" height="auto" style="max-width: 100%;max-height: 100%;">
                             </div>
-                        </div>
+                            <div class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/RofoRofosoTotoso.jpg" alt="" class="rounded-circle circle-photo" width="100%" height="auto">
+                            </div>
+                            <div class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/TopoToposo.jpg" alt="" class="rounded-circle circle-photo" width="100%" height="auto">
+                            </div>
+                        <!-- </div>
+                        
+                        <div class="row h-25 w-100 photos-row"> -->
+                            <div class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/DavizeraRera.jpg" class="rounded-circle  circle-photo" alt="" width="auto" height="auto">
+                            </div>
+                            <div class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/DavizeraRera.jpg" class="rounded-circle  circle-photo" alt="" width="100%" height="auto">
+                            </div>
+                            <div class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/DavizeraRera.jpg" class="rounded-circle  circle-photo" alt="" width="100%" height="auto">
+                            </div>
+                        </div>  
                     </div>
-                    <div class="col-6">
-
-                    </div>
+                    
                 </div>
             </div>
         </div>
