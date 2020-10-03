@@ -7,7 +7,7 @@
 
 html, body
 {
-    background-color: #343a40;
+    background-color: #72D563;
 }
 
 body 
@@ -80,13 +80,18 @@ body
 
 .nav-item:hover
 {
-    background-color: #ffffff;
+    background-color: #F1B761;
     transition: background-color 400ms;
+}
+
+.nav-item svg
+{
+    fill: #F1B761;
 }
 
 .nav-item:hover svg
 {
-    fill: #14141d;
+    fill: #032127;
     transition: fill 400ms;
 }
 
@@ -127,6 +132,23 @@ ul .active
     left: 0;
     min-width: 100%;
     height: 100%;
+}
+
+.carousel-indicators li
+{
+    background-color: #D93654;
+}
+
+.carousel .carousel-control-next-icon
+{
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+
+}
+
+.carousel .carousel-control-prev-icon
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .grow
@@ -208,6 +230,21 @@ ul .active
     -ms-user-select: none;
     user-select: none;
 }
+.all-news
+{
+    margin-left: 20px;
+    margin-bottom: 1.5%;
+    align-self: center;
+    text-decoration: none;
+    color: #1F9A75;
+    transition: 0.2s;
+}
+
+.all-news:hover
+{
+    color: #f5fce8;
+}
+
 
 .newsCardContainer
 {
@@ -227,6 +264,21 @@ ul .active
     }
 }
 
+.card
+{
+    background-color: #1F9A75;
+    border-radius: 8px;
+	border-color: #167a5c;
+	border-style: ridge;
+    border-width: 3px;
+    transition: 0.3s;
+}
+
+.card:hover
+{
+    border-color: #6af1c9;
+    border-width: 3px;
+}
 
 .newsCardContainer .card
 {
@@ -239,6 +291,11 @@ ul .active
     flex-flow: column-reverse;
     align-items: flex-start;
     padding: 2% 5%;
+}
+
+.card-header h3 , h5
+{
+    color: #f5fce8;
 }
 
 
@@ -255,6 +312,7 @@ ul .active
 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1rem;
+    color: #f5fce8;
 }
 
 .menu
@@ -292,3 +350,6 @@ ul .active
     height: 400px;
     overflow-y: auto;
 }
+
+
+
