@@ -56,7 +56,7 @@ body
 {
     .navbarButtonSizes
     {
-        width: 20%;
+        width: 10%;
     }
 
     .navbarButtonSizes li
@@ -441,4 +441,28 @@ ul .active
     {
         height: 50%;
     }
+}
+
+.socialMediaRow div
+{
+    display: flex; justify-content: center; align-items: center;
+    font-size: 10vh;
+}
+
+.socialMediaRow div i
+{
+    color: #F1B761;
+    background-color: #1F9A75;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 400ms;
+}
+
+.socialMediaRow div i:hover
+{
+    color: #1F9A75;
+    background-color: #F1B761;
+    font-size: 13vh;
+    transition: 400ms;
 }
