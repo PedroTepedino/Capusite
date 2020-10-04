@@ -7,7 +7,7 @@
 
 html, body
 {
-    background-color: #343a40;
+    background-color: #72D563;
 }
 
 body 
@@ -80,15 +80,23 @@ body
 
 .nav-item:hover
 {
-    background-color: #ffffff;
+    background-color: #F1B761;
     transition: background-color 400ms;
 }
 
 .nav-item i
+.nav-item svg
+{
+    fill: #F1B761;
+}
+
+.nav-item:hover svg
 {
     height: 100%;
     margin-right: 0px;
     padding-top: 2px;
+    fill: #032127;
+    transition: fill 400ms;
 }
 
 .nav-item:hover i
@@ -150,6 +158,23 @@ ul .active
     left: 0;
     min-width: 100%;
     height: 100%;
+}
+
+.carousel-indicators li
+{
+    background-color: #D93654;
+}
+
+.carousel .carousel-control-next-icon
+{
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+
+}
+
+.carousel .carousel-control-prev-icon
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .grow
@@ -231,6 +256,21 @@ ul .active
     -ms-user-select: none;
     user-select: none;
 }
+.all-news
+{
+    margin-left: 20px;
+    margin-bottom: 1.5%;
+    align-self: center;
+    text-decoration: none;
+    color: #1F9A75;
+    transition: 0.2s;
+}
+
+.all-news:hover
+{
+    color: #f5fce8;
+}
+
 
 .newsCardContainer
 {
@@ -250,6 +290,21 @@ ul .active
     }
 }
 
+.card
+{
+    background-color: #1F9A75;
+    border-radius: 8px;
+	border-color: #167a5c;
+	border-style: ridge;
+    border-width: 3px;
+    transition: 0.3s;
+}
+
+.card:hover
+{
+    border-color: #6af1c9;
+    border-width: 3px;
+}
 
 .newsCardContainer .card
 {
@@ -264,20 +319,19 @@ ul .active
     padding: 2% 5%;
 }
 
-
-@media (max-width: 992px)
+.card-header h3 , h5
 {
-    .card-header h3, .card-header h5
-    {
-        font-size: 1.25rem;
-        margin: 5px;
-    }
+    color: #f5fce8;
 }
+
+
+
 
 .title
 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1rem;
+    color: #f5fce8;
 }
 
 .menu
@@ -314,4 +368,52 @@ ul .active
     width: 800px;
     height: 400px;
     overflow-y: auto;
+}
+
+
+.photos-row div 
+{
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.circle-photo
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    padding: 0;
+    
+}
+
+#aboutUsPhoto
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#aboutUsPhoto img 
+{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 992px)
+{
+    .card-header h3, .card-header h5
+    {
+        font-size: 1.25rem;
+        margin: 5px;
+    }
+
+    #aboutUsPhoto
+    {
+        height: 50%;
+    }
 }
