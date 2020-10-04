@@ -64,9 +64,11 @@ body
         padding-left: 10px;
         padding-right: 10px;
         text-align: center;
-        background-color: #343a40;
+        background-color:  #032127;
     }
 }
+
+
 
 .nav-item
 {
@@ -76,6 +78,17 @@ body
     -webkit-box-sizing: border-box;
     border: 2px solid #343a40;
     border-radius: 10px;
+    display: flex;
+    flex-basis: min-content;
+}
+
+div.navIcon
+{
+    margin: 0px 10px;
+    display: flex;
+    flex: fit-content;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-item:hover
@@ -84,7 +97,6 @@ body
     transition: background-color 400ms;
 }
 
-.nav-item i
 .nav-item svg
 {
     fill: #F1B761;
@@ -92,34 +104,44 @@ body
 
 .nav-item:hover svg
 {
-    height: 100%;
-    margin-right: 0px;
-    padding-top: 2px;
     fill: #032127;
     transition: fill 400ms;
 }
 
+.nav-item i
+{
+    color: #f1b761;
+    width: 20px;
+    height: 24px;
+    margin-right: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: color 400ms, margin-right 400ms;
+}
+
 .nav-item:hover i
 {
-    color: #14141d;
-    margin-right: 1px;
-    transition: color 400ms;
+    color: #032127;
+    margin-right: 5px;
+    transition: color 400ms, margin-right 400ms;
 }
 
 .nav-item span
 {
+    color: rgba(241,183,97, 0);
     font-size: 0;
     width: 0;
     padding: 0;
     margin: 0;
+    transition: font-size 400ms, width 400ms, color 400ms;
 }
 
 .nav-item:hover span
 {
     color: #14141d;
     font-size: 1rem;
-    width:100%;
-    transition: color 400ms;
+    width: 100%;
+    transition: font-size 400ms, width 400ms, color 400ms;
 }
 
 ul .active
@@ -127,6 +149,9 @@ ul .active
     border-color: slategray;
     background-color: #4d5453;
 }
+
+
+
 
 .fullScreen
 {
