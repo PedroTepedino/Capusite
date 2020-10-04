@@ -84,12 +84,35 @@ body
     transition: background-color 400ms;
 }
 
-.nav-item:hover svg
+.nav-item i
 {
-    fill: #14141d;
-    transition: fill 400ms;
+    height: 100%;
+    margin-right: 0px;
+    padding-top: 2px;
 }
 
+.nav-item:hover i
+{
+    color: #14141d;
+    margin-right: 1px;
+    transition: color 400ms;
+}
+
+.nav-item span
+{
+    font-size: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item:hover span
+{
+    color: #14141d;
+    font-size: 1rem;
+    width:100%;
+    transition: color 400ms;
+}
 
 ul .active
 {
