@@ -190,15 +190,25 @@ ul .active
     background-color: #D93654;
 }
 
+.carousel-control-prev, .carousel-control-next
+{
+    background-color: rgba(20, 20, 29, 0);
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover
+{
+    background-color: rgba(20, 20, 29, 0.2);
+}
+
 .carousel .carousel-control-next-icon
 {
-
+    padding: 30px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-
 }
 
 .carousel .carousel-control-prev-icon
 {
+    padding: 30px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
@@ -241,6 +251,19 @@ ul .active
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: left;
+}
+
+#gamesShowdownHorizontal .col img
+{
+    filter: blur(0px);
+    transition: filter 400ms;
+}
+
+#gamesShowdownHorizontal .col-1 img
+{
+    filter: blur(5px);
+    transition: filter 400ms;
 }
 
 
@@ -348,8 +371,6 @@ ul .active
 {
     color: #f5fce8;
 }
-
-
 
 
 .title
