@@ -7,18 +7,14 @@ function Expand(id)
         if (mainElement.children[i].id === id)
         {
             mainElement.children[i].classList.remove("col-1");
-            //mainElement.children[i].classList.remove("shrink");
             mainElement.children[i].classList.add("col");
-            //mainElement.children[i].classList.add("grow");
         }
         else
         {
             mainElement.children[i].classList.remove("col");
-            //mainElement.children[i].classList.remove("grow");
             mainElement.children[i].classList.add("col-1");
-            //mainElement.children[i].classList.add("shrink");
         }
-    }   
+    }
 }
 
 function ExpandVertical(id)

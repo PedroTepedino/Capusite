@@ -290,6 +290,40 @@ a.btn:focus
 }
 
 
+.gamesShowHorizontalDiv
+{
+    transform: scale(0);
+    transition: all 400ms;
+}
+
+.col > .gamesShowHorizontalDiv
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1);
+    transform-origin: right;
+    transition: all 400ms;
+}
+
+.gamesShowHorizontalDiv p
+{
+    display:block;
+    width: 50%;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+    color: #F1B761;
+    background-color: #032127;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .gameShowImageVerticalExpanded
 {
     width: 100vw;
@@ -317,6 +351,66 @@ a.btn:focus
     width: 100%;
     object-fit: cover;
 }
+
+.gamesShowVerticalDiv
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1);
+    transition: all 400ms;
+}
+
+.gamesShowVerticalDiv > iframe
+{
+    width: 80vw;
+}
+
+.gameShowImageVerticalCollapsed > .gamesShowVerticalDiv
+{
+    transform: scale(0);
+    transition: all 400ms;
+}
+
+.gameShowImageVerticalCollapsed > .gamesShowVerticalDiv > iframe
+{
+    display: none;
+}
+
+.gamesShowVerticalDiv p
+{
+    display:block;
+    width: 90vw;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    color: #F1B761;
+    background-color: #032127;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.gameShowImageVerticalExpanded > .gamesVerticalLogo
+{
+    width: auto;
+    height: 0;
+    position: absolute;
+    transition: all 400ms;
+}
+
+.gameShowImageVerticalCollapsed > .gamesVerticalLogo
+{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    transition: all 400ms;
+}
+
 
 .bd-placeholder-img 
 {
@@ -383,11 +477,13 @@ a.btn:focus
 }
 
 
-.title
-{
+.title {
     font-family: 'Bangers', cursive;
     letter-spacing: 1rem;
+    font-size: 5rem;
     color: #f5fce8;
+    font-style: oblique;
+    padding: 5vh;
 }
 
 .menu
@@ -458,6 +554,37 @@ a.btn:focus
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.aboutUsTextBackGround
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-basis: min-content;
+    background-color: #032127;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+#aboutUsTitle
+{
+    text-align: center;
+    color: #F1B761;
+    font-family: 'Bangers', cursive;
+}
+
+#aboutUsText
+{
+    text-align: center;
+    color: #F1B761;
+    white-space: pre-line;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .socialMediaRow div
@@ -610,6 +737,38 @@ a.btn:focus
     {
         flex-direction: column;
     }
+
+    .carousel-caption h1
+    {
+        font-size: 3rem;
+        -webkit-text-stroke: 2px #032127C0;
+    }
+
+    .title
+    {
+        font-size: 3rem;
+        padding: 10px 0vh 0vh 2vh;
+    }
+
+    .email
+    {
+        margin: 2vh auto;
+    }
+
+    .subscription
+    {
+        margin:4vh auto;
+    }
+
+    .email p
+    {
+        font-size: 1.2rem;
+    }
+
+    .email p + p
+    {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 768px) 
@@ -623,5 +782,4 @@ a.btn:focus
     {
         max-height: 100%;
     }
-
 }

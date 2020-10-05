@@ -21,6 +21,7 @@
     <script src="./gamesShowdown.js"></script>
     <script src="./collapseNavbarToggle.js"></script>
     <script src="./circlePhotosAspectRations.js"></script>
+    <script src="./aboutUpChangeUp.js"></script>
 </head>
 
 <body class="scrollbar scrollbarVisibleThumb">
@@ -162,15 +163,31 @@
                 <div id="gamesShowdownHorizontal" class="row screenArea d-none d-lg-flex zeroMarginPadding">
                     <div id="gamesShowdown1" class="col gameShowBorder zeroMarginPadding gameShowImageHorizontal"
                         onclick="Expand('gamesShowdown1')">
-                        <img src="./images/magemania1.jpg" alt="">
+                        <img src="./images/variosbruxo.jpg" alt="">
+                        <div class="gamesShowHorizontalDiv">
+                            <img src="./images/MageMania-export.png" style="width: auto; height: 30%; ">
+                            <iframe src="https://store.steampowered.com/widget/1101170/" frameborder="0" width="646" height="190"></iframe>
+                            <img src="./images/en_estudantes_branco.png" style="width: auto; height: 20%; background-color: #032127; border-radius: 10px;">
+                        </div>
                     </div>
+
                     <div id="gamesShowdown2" class="col-1 gameShowBorder zeroMarginPadding gameShowImageHorizontal"
                         onclick="Expand('gamesShowdown2')">
-                        <img src="./images/magemania2.jpg" alt="">
+                        <img src="./images/SuperDashBackgroundSite.png" alt="">
+                        <div class="gamesShowHorizontalDiv">
+                            <img src="./images/SuperDash.png"  style="width: auto; height: 40%; " >
+                            <iframe src="https://itch.io/embed/570818" height="167" width="552" frameborder="0"><a href="https://capudino.itch.io/super-dash-island">Super Dash Island by CapuDino</a></iframe>
+                        </div>
                     </div>
-                    <div id="gamesShowdown3" class="col-1 gameShowBorder zeroMarginPadding gameShowImageHorizontal"
+                    <div  id="gamesShowdown3" class="col-1 gameShowBorder zeroMarginPadding gameShowImageHorizontal"
                         onclick="Expand('gamesShowdown3')">
-                        <img src="./images/magemania3.jpg" alt="">
+                        <img src="./images/slide2forest-export.png" alt="">
+                        <div class="gamesShowHorizontalDiv">
+                            <img src="images/beliscoLogo.png" style="width: auto; height: 40%; ">
+                            <p>
+                                Project Belisco is a Metroidvania game that takes place on an island with a mysterious past, it will be up to the Belisco to unravel his mysteries while take care of his family.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -178,17 +195,35 @@
                     <div id="gamesVertical1"
                         class="col-12 zeroMarginPadding gameShowImageVerticalExpanded gameShowBorder"
                         onclick="ExpandVertical('gamesVertical1')">
-                        <img src="mageMania1Sideways.jpg" alt="">
+                        <img src="./images/MageMania-export.png" class="gamesVerticalLogo" alt="">
+                        <img src="./images/variosbruxoCelular.jpg" alt="">
+                        <div class="gamesShowVerticalDiv">
+                            <img src="./images/MageMania-export.png" style="width: auto; height: 30%; " alt="">
+                            <iframe src="https://store.steampowered.com/widget/1101170/" frameborder="0" width="646" height="190"></iframe>
+                            <img src="./images/en_estudantes_branco.png" style="width: auto; height: 20%; background-color: #032127; border-radius: 10px;" alt="">
+                        </div>
                     </div>
                     <div id="gamesVertical2"
                         class="col-12 zeroMarginPadding gameShowImageVerticalCollapsed gameShowBorder"
                         onclick="ExpandVertical('gamesVertical2')">
-                        <img src="mageMania2Sideways.jpg" alt="">
+                        <img src="./images/SuperDash.png" class="gamesVerticalLogo" alt="">
+                        <img src="./images/SuperDashBackgroundSiteCelular.png" alt="">
+                        <div class="gamesShowVerticalDiv">
+                            <img src="./images/SuperDash.png"  style="width: auto; height: 40%; " >
+                            <iframe src="https://itch.io/embed/570818" height="167" width="552" frameborder="0"><a href="https://capudino.itch.io/super-dash-island">Super Dash Island by CapuDino</a></iframe>
+                        </div>
                     </div>
                     <div id="gamesVertical3"
                         class="col-12 zeroMarginPadding gameShowImageVerticalCollapsed gameShowBorder"
                         onclick="ExpandVertical('gamesVertical3')">
-                        <img src="mageMania3Sideways.jpg" alt="">
+                        <img src="./images/beliscoLogo-export.png" class="gamesVerticalLogo" alt="">
+                        <img src="./images/slide2forest-export-celular.png" alt="">
+                        <div class="gamesShowVerticalDiv">
+                            <img src="images/beliscoLogo.png" style="width: auto; height: 40%; ">
+                            <p>
+                                Project Belisco is a Metroidvania game that takes place on an island with a mysterious past, it will be up to the Belisco to unravel his mysteries while take care of his family.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,7 +234,7 @@
             <div class="container-fluid screenArea border-primary overflow-auto" style="margin: 0; padding: 1vh 4vw;">
                 <div class="row justify-content-center zeroMarginPadding" style="height: 20%; width: 100%;">
                     <div class="col-12 text-justify row">
-                        <h1 class="align-top text-left title" style="font-style: oblique; font-size: 5rem;">
+                        <h1 class="align-top text-left title">
                             <b>RECENT NEWS</b></h1>
                         <a class="all-news align-bottom" target="_blank" href="https://www.globo.com/">View all news</a>
                     </div>
@@ -254,34 +289,36 @@
                     </div>
                     <div class=" col-12 col-lg-6 h-100">
                         <div class="row h-50 w-100">
-                            <div class="col-12" style="display: flex; flex-direction: column; align-items: center;  margin-top: auto; margin-bottom: auto;">
+                            <div class="col-9 mx-auto aboutUsTextBackGround">
                                 <h1 id="aboutUsTitle">Capudino</h1>
-                                <p id="aboutUsText"></p>
+                                <p id="aboutUsText" >
+                                    Capudino Studios was founded in 2018.<br>We are an independent game developer and publisher studio, based in Brasília, Brazil, formed by five friends and college colleagues that share a love for pixel art and 3D toon art.<br>Our goal is to create games that can be played and enjoyed by all, without giving up of creating a healthy studio and a respectful community.
+                                </p>
                             </div>
                         </div>
                         <div class="row h-50 w-100 photos-row">
-                            <div class="col-4 h-50 d-flex my-auto">
+                            <div id="capudinoPhoto" class="col-4 h-50 d-flex my-auto">
                                 <img src="./images/CapudinoLogoNoNameNoBackground.png" alt=""
                                     class="rounded-circle  circle-photo" width="100%" height="auto"
                                     style="max-width: 100%;max-height: 100%;">
                             </div>
-                            <div class="col-4 h-50 d-flex my-auto">
+                            <div id="rofoPhoto" class="col-4 h-50 d-flex my-auto">
                                 <img src="./images/RofoRofosoTotoso.jpg" alt="" class="rounded-circle circle-photo"
                                     width="100%" height="auto">
                             </div>
-                            <div class="col-4 h-50 d-flex my-auto">
+                            <div id="topoPhoto" class="col-4 h-50 d-flex my-auto">
                                 <img src="./images/TopoToposo.jpg" alt="" class="rounded-circle circle-photo"
                                     width="100%" height="auto">
                             </div>
                             <!-- </div>
                         
                         <div class="row h-25 w-100 photos-row"> -->
-                            <div class="col-4 h-50 d-flex my-auto">
+                            <div id="dovoPhoto" class="col-4 h-50 d-flex my-auto">
                                 <img src="./images/DavizeraRera.jpg" class="rounded-circle  circle-photo" alt=""
                                     width="auto" height="auto">
                             </div>
-                            <div class="col-4 h-50 d-flex my-auto">
-                                <img src="./images/DavizeraRera.jpg" class="rounded-circle  circle-photo" alt=""
+                            <div id="joooPhoto" class="col-4 h-50 d-flex my-auto">
+                                <img src="./images/JoooOoo.jpg" class="rounded-circle  circle-photo" alt=""
                                     width="100%" height="auto">
                             </div>
                             <div id="josoPhoto" class="col-4 h-50 d-flex my-auto">
@@ -297,11 +334,11 @@
         <!--Comunidade-->
         <div id="Community" class="fullScreen">
             <div class="container-fluid screenArea zeroMarginPadding d-flex justify-content-center align-items-center"
-                style="background-color:#032127;">
-                <div class="row justify-content-center zeroMarginPadding" style="height: 20%; width: 100%;">
+                style="background-color:#032127; flex-direction: column;">
+                <div class="row justify-content-center zeroMarginPadding" style="height: 10%; width: 90%;">
                     <div class="col-12 text-justify row">
-                        <h1 class="align-top text-left title" style="font-style: oblique; font-size: 5rem;">
-                            <b>RECENT NEWS</b>
+                        <h1 class="align-top text-left title">
+                            <b>Community</b>
                         </h1>
                     </div>
                 </div>
@@ -344,14 +381,14 @@
 
         <!--Contact-->
         <div id="Contact" class="fullScreen" style="height: 90vh;">
-            <div class="container-fluid screenArea zeroMarginPadding" style="background-color:#1F9A75; ">
+            <div class="container-fluid screenArea zeroMarginPadding h-100" style="background-color:#1F9A75; ">
                 <div class="row justify-content-center zeroMarginPadding" style="height: 20%; width: 100%;">
-                    <div class="col-12 text-justify row">
-                        <h1 class="align-top text-left title" style="font-style: oblique; font-size: 5rem;">
+                    <div class="col-12 text-justify row" >
+                        <h1 class="align-top text-left title">
                             <b>Contact Us</b>
                         </h1>
                     </div>
-                    <div class=" col-10 contact justify-content-center align-items-center">
+                    <div class=" col-10 contact justify-content-center align-items-center" >
                         <div class="col-lg-6  col-10 subscription justify-content-center align-items-center text">
                             <p class="text">Subscribe today to our newsletter!</p>
                             <form action="">
@@ -370,6 +407,13 @@
             </div>
         </div>
     </main>
+
+    <footer class="footer d-flex px-5" style="position: relative; height: 10vh; background-color: #14141d; width: 100vw; justify-content: center; align-content: center; align-items: center;">
+        <div style="display: flex; align-items: center; flex-direction: column; flex-basis: min-content;">
+            <span class="text-muted d-flex" style="font-family: 'Varela Round', sans-serif;"><b>Capudino Studios</b></span>
+            <span class="text-muted d-flex" style="font-family: 'Varela Round', sans-serif;">Website by<b style="margin-left:3px">Capudino Studios</b></span>
+        </div>
+    </footer>
 
     <!--Scripts-->
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

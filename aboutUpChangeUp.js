@@ -2,7 +2,7 @@ $(document).ready(function (){
     $('#capudinoPhoto').click(function () {
         $('#aboutUsPhoto > img').attr("src", "./images/CapudinoLogo.png").stop(true,true).hide().fadeIn(1000, "swing");
         $('#aboutUsTitle').text("Capudino").stop(true,true).hide().fadeIn(1000, "swing");
-        $('#aboutUsText').text("").stop(true,true).hide().fadeIn(1000, "swing");
+        $('#aboutUsText').text('Capudino Studios was founded in 2018.\nWe are an independent game developer and publisher studio, based in Brasília, Brazil, formed by five friends and college colleagues that share a love for pixel art and 3D toon art.\nOur goal is to create games that can be played and enjoyed by all, without giving up of creating a healthy studio and a respectful community.').stop(true,true).hide().fadeIn(1000, 'swing');
     });
 
     $('#rofoPhoto').click(function () {
