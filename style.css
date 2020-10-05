@@ -26,6 +26,7 @@ body
 .scrollbar::-webkit-scrollbar-track
 {
     background-color: #494b54;
+    border-radius: 5px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb
@@ -35,6 +36,11 @@ body
     border-right: none;
     border-left: none;
     transition: background-color 1000ms;
+}
+
+.navbar
+{
+    z-index: 99999;
 }
 
 
@@ -359,6 +365,7 @@ a.btn:focus
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 100;
     top: 0;
     padding: 10vh;
     justify-content: space-around;
@@ -383,6 +390,15 @@ a.btn:focus
     display: none;
 }
 
+.gameShowImageVerticalExpanded .gamesVerticalBackground
+{
+    filter: none;
+}
+.gameShowImageVerticalCollapsed .gamesVerticalBackground
+{
+    filter: blur(4px);
+}
+
 .gamesShowVerticalDiv p
 {
     display:block;
@@ -400,6 +416,7 @@ a.btn:focus
     width: auto;
     height: 0;
     position: absolute;
+    z-index: 1;
     transition: all 400ms;
 }
 
@@ -408,6 +425,7 @@ a.btn:focus
     width: auto;
     height: 100%;
     position: absolute;
+    z-index: 9999;
     transition: all 400ms;
 }
 
@@ -560,7 +578,16 @@ a.btn:focus
     align-content: center;
 }
 
-#aboutUsPhoto img 
+#aboutUsPhotoPhone
+{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+#aboutUsPhoto img
 {
     width: auto;
     height: auto;
@@ -569,6 +596,27 @@ a.btn:focus
     padding: 20px;
     border-radius: 50px;
 }
+
+#aboutUsPhotoPhone img
+{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+}
+
+#aboutUsPhotoPhone div div
+{
+    max-height: 30%;
+}
+
+
+#aboutUsPhotoPhone div div img
+{
+    max-width: 100%; max-height: 100%;
+}
+
 
 .aboutUsTextBackGround
 {
@@ -584,14 +632,26 @@ a.btn:focus
     border-radius: 20px;
 }
 
-#aboutUsTitle
+.aboutUsTextBackGroundPhone
+{
+    display: block;
+    height: 20%;
+    background-color: #032127;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+
+#aboutUsTitle, #aboutUsTitlePhone
 {
     text-align: center;
     color: #F1B761;
     font-family: 'Bangers', cursive;
 }
 
-#aboutUsText
+#aboutUsText, #aboutUsTextPhone
 {
     text-align: center;
     color: #F1B761;
@@ -719,6 +779,30 @@ a.btn:focus
     color: #032127;
 }
 
+.aboutUsMainRow
+{
+    height: 80%;
+    width: 80%;
+    background-color: #F1B761;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.aboutUsMainRowPhone
+{
+    height: 80%;
+    width: 80%;
+    background-color: #F1B761;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.aboutUsMainRowPhone .scrollbar::-webkit-scrollbar
+{
+    height: 10px;
+}
+
 @media (max-width: 992px)
 {
     .navbarButtonSizes
@@ -743,6 +827,12 @@ a.btn:focus
     #aboutUsPhoto
     {
         height: 50%;
+    }
+
+    #aboutUsPhotoPhone
+    {
+        padding-top: 5px;
+        flex-direction: column;
     }
 
     .contact

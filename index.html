@@ -207,7 +207,7 @@
                         class="col-12 zeroMarginPadding gameShowImageVerticalExpanded gameShowBorder"
                         onclick="ExpandVertical('gamesVertical1')">
                         <img src="./images/MageMania-export.png" class="gamesVerticalLogo" alt="">
-                        <img src="./images/variosbruxoCelular.jpg" alt="">
+                        <img src="./images/variosbruxoCelular.jpg" class="gamesVerticalBackground" alt="">
                         <div class="gamesShowVerticalDiv">
                             <img src="./images/MageMania-export.png" style="width: auto; height: 30%; " alt="">
                             <iframe src="https://store.steampowered.com/widget/1101170/" frameborder="0" width="646" height="190"></iframe>
@@ -218,7 +218,7 @@
                         class="col-12 zeroMarginPadding gameShowImageVerticalCollapsed gameShowBorder"
                         onclick="ExpandVertical('gamesVertical2')">
                         <img src="./images/SuperDash.png" class="gamesVerticalLogo" alt="">
-                        <img src="./images/SuperDashBackgroundSiteCelular.png" alt="">
+                        <img src="./images/SuperDashBackgroundSiteCelular.png" class="gamesVerticalBackground" alt="">
                         <div class="gamesShowVerticalDiv">
                             <img src="./images/SuperDash.png"  style="width: auto; height: 40%; " >
                             <iframe src="https://itch.io/embed/570818" height="167" width="552" frameborder="0"><a href="https://capudino.itch.io/super-dash-island">Super Dash Island by CapuDino</a></iframe>
@@ -227,8 +227,8 @@
                     <div id="gamesVertical3"
                         class="col-12 zeroMarginPadding gameShowImageVerticalCollapsed gameShowBorder"
                         onclick="ExpandVertical('gamesVertical3')">
-                        <img src="./images/beliscoLogo-export.png" class="gamesVerticalLogo" alt="">
-                        <img src="./images/slide2forest-export-celular.png" alt="">
+                        <img src="./images/beliscoLogo-export.png" class="gamesVerticalLogo" style="" alt="">
+                        <img src="./images/slide2forest-export-celular.png" class="gamesVerticalBackground" alt="">
                         <div class="gamesShowVerticalDiv">
                             <img src="images/beliscoLogo.png" style="width: auto; height: 40%; ">
                             <p>
@@ -294,8 +294,8 @@
         <!--About Us-->
         <div id="AboutUS" class="fullScreen">
             <div class="container-fluid screenArea zeroMarginPadding d-flex justify-content-center align-items-center">
-                <div class="row" style="height: 80%; width: 80%; background-color: #F1B761; border-radius: 10px;">
-                    <div id="aboutUsPhoto" class="col-12 col-lg-6 d-flex">
+                <div class="row d-none d-lg-flex aboutUsMainRow" >
+                    <div id="aboutUsPhoto" class=" col-6 d-flex">
                         <img src="./images/CapudinoLogo2 (1).png" alt="">
                     </div>
                     <div class=" col-12 col-lg-6 h-100">
@@ -338,7 +338,43 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="row d-lg-none d-flex aboutUsMainRowPhone">
+                    <div id="aboutUsPhotoPhone" class="col-12  d-flex">
+                        <img class="col-12" src="./images/CapudinoLogo2 (1).png" alt="">
+                    </div>
+                    <div class="col-12 aboutUsTextBackGroundPhone scrollbar">
+                        <h1 id="aboutUsTitlePhone">Capudino</h1>
+                        <p id="aboutUsTextPhone" >
+                            Capudino Studios was founded in 2018.<br>We are an independent game developer and publisher studio, based in Brasília, Brazil, formed by five friends and college colleagues that share a love for pixel art and 3D toon art.<br>Our goal is to create games that can be played and enjoyed by all, without giving up of creating a healthy studio and a respectful community.
+                        </p>
+                    </div>
+                    <div style="display: flex; overflow-x: scroll;" class=" scrollbar col-12 ">
+                        <div id="capudinoPhotoPhone" class="col-4">
+                            <img src="./images/CapudinoLogoNoNameNoBackground.png" alt=""
+                                 class="rounded-circle  circle-photo" width="100%" height="auto">
+                        </div>
+                        <div id="rofoPhotoPhone" class="col-4">
+                            <img src="./images/RofoRofosoTotoso.jpg" alt="" class="rounded-circle circle-photo"
+                                 width="100%" height="auto">
+                        </div>
+                        <div id="topoPhotoPhone" class="col-4">
+                            <img src="./images/TopoToposo.jpg" alt="" class="rounded-circle circle-photo"
+                                 width="100%" height="auto">
+                        </div>
+                        <div id="dovoPhotoPhone" class="col-4">
+                            <img src="./images/DavizeraRera.jpg" class="rounded-circle  circle-photo" alt=""
+                                 width="auto" height="auto">
+                        </div>
+                        <div id="joooPhotoPhone" class="col-4">
+                            <img src="./images/JoooOoo.jpg" class="rounded-circle  circle-photo" alt=""
+                                 width="100%" height="auto">
+                        </div>
+                        <div id="josoPhotoPhone" class="col-4">
+                            <img src="./images/JosoJososo.jpg" class="rounded-circle  circle-photo" alt=""
+                                 width="100%" height="auto">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
