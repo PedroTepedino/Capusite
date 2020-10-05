@@ -327,11 +327,18 @@ a.btn:focus
     -ms-user-select: none;
     user-select: none;
 }
+
+.news-title
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .all-news
 {
     margin-left: 20px;
     margin-bottom: 1.5%;
-    align-self: center;
+    align-self: flex-end;
     text-decoration: none;
     color: #1F9A75;
     transition: 0.2s;
@@ -609,6 +616,17 @@ a.btn:focus
     .contact
     {
         flex-direction: column;
+    }
+
+    .news-title
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .all-news
+    {
+        align-self: flex-start;
     }
 }
 
