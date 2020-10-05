@@ -150,9 +150,6 @@ ul .active
     background-color: #4d5453;
 }
 
-
-
-
 .fullScreen
 {
     position: relative;
@@ -211,6 +208,50 @@ ul .active
     padding: 30px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d93654' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
+
+.carousel-caption h1
+{
+    font-size: 5rem;
+    font-family: 'Bangers', cursive;
+    color: #F1B761;
+    -webkit-text-fill-color: #F1B761FF;
+    -webkit-text-stroke: 3px #032127C0;
+}
+
+a.button
+{
+    color: #F1B761;
+    border-color: #032127;
+    background-color: #032127;
+}
+
+a.button:hover
+{
+    color: #032127;
+    border-color: #F1B761 ;
+    background-color:  #F1B761;
+}
+
+a.button:active
+{
+    color: #032127;
+    border-color: #F1B761 ;
+    background-color:  #F1B761;
+    box-shadow: 0 0 0 0.2rem #03212788;
+}
+
+a.button:focus
+{
+    color: #032127;
+    border-color: #F1B761 ;
+    background-color:  #F1B761;
+}
+
+a.btn:focus
+{
+    box-shadow: 0 0 0 0.2rem #03212788;
+}
+
 
 .grow
 {
