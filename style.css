@@ -412,7 +412,18 @@ a.btn:focus
 }
 
 
-.bd-placeholder-img 
+.news-title
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.news-title a
+{
+    align-self: center;
+}
+
+.bd-placeholder-img
 {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -420,12 +431,6 @@ a.btn:focus
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.news-title
-{
-    display: flex;
-    flex-direction: row;
 }
 
 .all-news
@@ -749,8 +754,8 @@ a.btn:focus
     {
         flex-direction: column;
         align-items: flex-start;
-        
     }
+
     .all-news
     {
         align-self: flex-start;
@@ -786,6 +791,11 @@ a.btn:focus
     .email p + p
     {
         font-size: 1.5rem;
+    }
+
+    .news-title .title b
+    {
+        font-size: 3rem;
     }
 }
 
